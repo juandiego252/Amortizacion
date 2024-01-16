@@ -43,10 +43,10 @@ public class Cuota {
 	}
 	
 	public void mostrarPrestamo() {
-	    System.out.println("Número\tCuota\tInicio\tInterés\tAbono Capital\tSaldo");
+	    System.out.println("Numero|tCuota|tInicio|tInteres|tCapital|tSaldo");
 
 	    for (int i = 1; i <= Numero; i++) {
-	        System.out.printf("%d\t%.2f\t%.2f\t%.2f\t%.2f\t%.2f\n",
+	        System.out.printf("%d|t%.2f|t%.2f|t%.2f|t%.2f|t%.2f\n",
 	                          i, getCuota(), getInicio(), getInteres(), getAbonoCapital(), getSaldo());
 	    }
 	}
