@@ -45,10 +45,10 @@ public class Banco {
     public void asignarPrestamo(String cedulaCliente, Prestamo prestamo) {
         Cliente cliente = buscarCliente(cedulaCliente);
         if (cliente != null) {
-            CalculadoraAmortizacion.generarTabla(prestamo); // Supongamos que hay un método generarTablaAmortizacion en la clase Prestamo
+            CalculadoraAmortizacion.generarTabla(prestamo);
             agregarPrestamo(prestamo);
         } else {
-            System.out.println("No es cliente del banco.");
+            System.out.println("No es cliente del banco");
         }
     }
 
